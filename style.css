@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#wrapper{
+    background-image: linear-gradient(rgba(0,0,0,0.5),#2ca5fc),url('img/samuel-girven-fqMu99l8sqo-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 5%;
+    font-family: 'Kaushan Script', cursive;
+    font-style: italic;
+    color: crimson;
+}
+span{
+    color: white;
+}
+.wrapper-content{
+    text-align: center;
+    padding-top: 200px;
+    color: white;
+
+}
+.wrapper-content h1{
+    font-size: 140px;
+    font-family: 'Kaushan Script', cursive;
+    text-transform: capitalize;
+    
+
+}
+.wrapper-content p{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-style: italic;
+
+}
+.wrapper-content span{
+    color: crimson;
+}
+.wrapper-contentbtn{
+    margin: 30px auto 0;
+}
+.wrapper-contentbtn a{
+    width: 150px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: white;
+    border: .5px solid white;
+    font-size: 20px;
+}
+.wrapper-contentbtn a:hover{
+    background-color: white;
+    color: black;
+}
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #2ca5fc;
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+
+}
+#menubtn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    text-align: center;
+    background: #2ca5fc;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 3;
+}
+#menu{
+    width: 20px;
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width:700px){
+    .wrapper-content h1{
+        font-size: 80px;
+        font-family: 'Kaushan Script', cursive;
+        text-transform: capitalize;
+        
+    
+    }
+    .wrapper-contentbtn a{
+        display: block;
+        margin: 20px auto;
+    }
+    
+}
+
+    
+
+#features{
+    width: 100%;
+    padding: 70px 0;
+}
+.features-header{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.features-header p{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2ca5fc;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.features-header h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
+.doings{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.content{
+    flex: 50%;
+}
+.content-image{
+    flex: 50%;
+    
+}
+.content-image img{
+    width: 80%;
+    border-radius: 10px;
+}
+.firstcontent h1{
+    text-align: left;
+    margin-bottom: 10px;
+    color: #2ca5fc;
+    font-size: 30px;
+    font-weight: bold;
+}
+.content-summary{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    color: #2ca5fc;
+    border: 1px solid #2ca5fc;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 2px 8px;
+    
+}
+.about{
+    text-align: initial;
+    margin-left: 10px;
+    font-size: 18px;
+    
+}
+
+@media screen and (max-width:767px){
+    .content{
+        flex: 100%;
+    }
+    .content-image{
+        flex: 100%;
+        
+    }
+    .features-header h2{
+        font-size: 30px;
+    }
+    .features-header p{
+        font-size: 30px;
+    }
+    
+/* services */
+}
+#services{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #cfe8cf;
+}
+.services-header{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.services-header p{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2ca5fc;
+    font-weight: bold;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.services-header h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.images{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+.photo{
+    flex-basis: 48%;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+.photo img{
+    width: 100%;
+    border-radius: 7px;
+}
+.light{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#2ca5fc);
+    opacity: 0;
+    transition: 1s;
+
+}
+.photo:hover .light{
+    opacity: 1;
+
+}
+.photo-content{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: white;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.photo:hover .photo-content{
+    bottom: 40%;
+    opacity: 1;
+
+
+}
+.photo-content h2{
+    font-size: 35px;
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Kaushan Script', cursive;
+}
+.photo-content p{
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+@media screen and (max-width:767px){
+    .services-header p{
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #2ca5fc;
+        font-weight: bold;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .services-header h2{
+        font-size: 30px;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+    .photo{
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        position: relative;
+        
+    }
+    .photo-content h2{
+        font-size: 25px;
+        color: white;
+        text-transform: capitalize;
+        font-family: 'Kaushan Script', cursive;
+    }
+    .photo-content p{
+        font-size: 12px;
+        color: white;
+        text-transform: capitalize;
+    }
+
+}
+
+/* expectations */
+#activities{
+    width: 100%;
+    padding: 70px 0;
+    
+}
+.activities-header{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.activities-header h2{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+}
+
+.expectations{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    
+}
+.expectations-content{
+    flex-basis: 28%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding-bottom: 35px;
+    transition: transform.5s;
+}
+.expectations-content:hover{
+    transform: translateY(-7px);
+}
+.expectations-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+   
+}
+.about{
+    text-align: center;
+    
+}
+.about p{
+    font-size: 30px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+}
+.line{
+    width: 350px;
+    height: 4px;
+    background: #2ca5fc;
+    margin: 10px auto;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+@media screen and (max-width:767px){
+    .expectations-content{
+        flex-basis: 90%;
+        margin-bottom: 20px;
+        cursor: pointer;
+        padding-bottom: 35px;
+    }
+    .activities-header h2{
+        font-size: 30px;
+        text-transform: capitalize;
+        font-weight: bold;
+        
+    }
+    .about p{
+        font-size: 25px;
+        text-transform: capitalize;
+        color: black;
+        font-weight: bold;
+    }
+
+}
+   
+/* contact page */
+
+#contact{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #cfe8cf;
+    
+    
+}
+.contact-header{
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+.contact-header h2{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 20px;
+    
+}
+.contact-wrapper{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+}
+.first-wrapper,.third-wrapper{
+    flex-basis: 20%;
+    margin-top: 20px;
+    
+}
+.second-wrapper{
+    flex-basis: 30%;
+    margin-top: 30px;
+}
+.second-wrapper{
+    text-align: right;
+}
+.third-wrapper{
+    text-align: center;
+}
+.first-wrapper h1,.second-wrapper h1,.third-wrapper h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+}
+.first-wrapper p,.third-wrapper p{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-style: italic;
+}
+.second-wrapper h2{
+    font-size: 20px;
+    color: #2ca5fc;
+    text-transform: uppercase;
+    text-align: initial;
+    margin-left: 5px;
+    
+}
+.second-wrapper input{
+    width: 505px;
+    padding: 10px 0;
+    padding-left: 7px;
+    margin-left: 5px;
+}
+.second-wrapper button{
+    margin-top: 10px;
+    width: 517px;
+    padding: 14px 0;
+    background-color: #2ca5fc;
+    color: black;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.second-wrapper button:hover{
+    background-color: white;
+    color: #2ca5fc;
+}
+.social-links{
+    text-align: center;
+    margin-top: 30px;
+    
+    
+}
+.social-links .fa-brands{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    border: 1px solid #2ca5fc;
+    color: #2ca5fc;
+    margin: 40px 5px 0;
+    cursor: pointer;
+    transition: transform .5s;
+}
+.social-links .fa-brands:hover{
+    background-color: #2ca5fc;
+    color: white;
+    transform: translateY(-7px);
+}
+.social-links p{
+    margin-top: 20px;
+    font-size: 20px;
+
+}
+.first-wrapper .fa-solid{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    color: #2ca5fc;
+    
+}
+.third-wrapper .fa-solid{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    color: #2ca5fc;
+    
+}
+@media screen and (max-width:767px){
+    .first-wrapper,.third-wrapper{
+        flex-basis: 100%;
+        text-align: center;
+        
+        
+        
+    }
+    .second-wrapper{
+        flex-basis: 100%;
+        text-align: center;
+        
+    }
+    .second-wrapper h2{
+        font-size: 20px;
+        color: #2ca5fc;
+        text-transform: uppercase;
+        text-align: center;
+        margin-left: 5px;
+        
+    }
+    .second-wrapper,.third-wrapper{
+        padding-top: 30px;
+    }
+    .second-wrapper input{
+        width: 300px;
+        padding: 10px 0;
+        padding-left: 7px;
+        margin-left: 5px;
+    }
+    .second-wrapper button{
+        margin-top: 10px;
+        width: 311px;
+        padding: 14px 0;
+        background-color: #2ca5fc;
+        color: black;
+        border: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .second-wrapper h2{
+        font-size: 15px;
+    }
+    .contact-header .line{
+        width: 200px;
+    }
+    .contact-wrapper .line{
+        width: 200px;
+    }
+    .first-wrapper p{
+        font-size: 17px;
+    }
+
+    .third-wrapper p{
+        font-size: 17px;
+    }
+    .second-wrapper h1{
+        font-size: 27px;
+    }
+}
